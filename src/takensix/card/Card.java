@@ -67,7 +67,7 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return "[N�" + number + " (" + score + "p)]";
+		return "[N�" + number + " (" + score + "p)]";
 	}
 
 	@Override
@@ -96,3 +96,21 @@ public class Card {
 	}
 
 }
+/*
+La classe Card représente une carte de jeu avec deux attributs principaux : un numéro unique et un score.
+
+Voici ce que font les différentes méthodes de cette classe :
+
+Constructeur Card(int number, int score) : Ce constructeur crée une nouvelle instance de Card avec un numéro et un score spécifiés.
+
+getNumber() et setNumber(int number) : Ces méthodes sont des getters et des setters pour l'attribut number de la carte.
+
+getScore() et setScore(int score) : Ces méthodes sont des getters et des setters pour l'attribut score de la carte.
+
+toString() : Cette méthode surcharge la méthode toString de la classe Object pour fournir une représentation sous forme de chaîne de caractères de l'objet Card. La chaîne retournée contient le numéro de la carte et son score.
+
+hashCode() : Cette méthode surcharge la méthode hashCode de la classe Object pour retourner un code de hachage pour l'objet Card. Ce code de hachage est utilisé lors de l'utilisation de Card dans des collections basées sur des hachages comme HashMap.
+
+equals(Object obj) : Cette méthode surcharge la méthode equals de la classe Object pour déterminer si deux objets Card sont égaux. Deux cartes sont considérées comme égales si leurs numéros et leurs scores sont identiques.
+
+En résumé, cette classe est utilisée pour représenter et manipuler une carte de jeu individuelle dans le cadre du jeu.*/

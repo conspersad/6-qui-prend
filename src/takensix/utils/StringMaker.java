@@ -144,7 +144,7 @@ public class StringMaker {
 	public static String askStack(Stacks stacks, int suggestion) {
 		String str = StringMaker.stacks(stacks);
 		str = str.replace("{", "").replace("}", ":");
-		str += "Which stack do you want to get ? [1-"+ stacks.size() + "] (stack n�"+suggestion+ " suggested)\n";
+		str += "Which stack do you want to get ? [1-"+ stacks.size() + "] (stack n�"+suggestion+ " suggested)\n";
 		return str + CONSOLE_INPUT_SYMBOL;
 	}
 
@@ -163,3 +163,17 @@ public class StringMaker {
 		return str + (bestVictoryPlayers.size() > 1 ? 'S' : "");
 	}
 }
+/*La classe StringMaker est une classe utilitaire conçue pour générer des chaînes de caractères (strings) pour représenter différentes informations sur l'état actuel d'une partie du jeu "TakeSix". Les méthodes de cette classe sont utilisées pour générer des strings pour l'affichage dans la console ou l'interface utilisateur du jeu.
+
+Voici ce que font certaines des méthodes les plus importantes de cette classe :
+
+players(List<Player> players): Génère une string qui liste les noms des joueurs.
+scores(List<Player> players, GameContext gameContext): Génère une string qui détaille les scores des joueurs, le nombre de victoires, de meilleurs scores, de survies, de fatalités et le temps moyen de jeu.
+rewards(Map<String, List<Player>> stats): Génère une string qui détaille les récompenses obtenues par chaque joueur.
+playedCards(Map<Player, Card> playedCards): Génère une string qui indique quelles cartes ont été jouées par chaque joueur.
+playsCard(Player player, Card card): Génère une string qui indique qu'un joueur spécifique joue une carte spécifique.
+getsPoints(Player player, int points): Génère une string qui indique qu'un joueur spécifique obtient un certain nombre de points.
+stacks(Stacks stacks): Génère une string qui détaille l'état actuel des piles de cartes.
+askCard(List<Card> playerCards): Génère une string qui demande à l'utilisateur de choisir une carte parmi les cartes du joueur.
+askStack(Stacks stacks, int suggestion): Génère une string qui demande à l'utilisateur de choisir une pile de cartes.
+La classe contient également plusieurs autres méthodes pour générer des strings pour différentes situations de jeu. En général, ces méthodes sont utilisées pour convertir l'état actuel du jeu en une forme lisible par l'homme, afin qu'il puisse être affiché à l'utilisateur.*/

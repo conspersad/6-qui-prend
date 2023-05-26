@@ -11,7 +11,6 @@ import takensix.context.GameContext;
 import takensix.context.PlayContext;
 import takensix.player.Player;
 import takensix.stack.Stacks;
-import takensix.utils.Counter;
 import takensix.utils.StringMaker;
 
 /**
@@ -24,7 +23,7 @@ import takensix.utils.StringMaker;
  * * cards are given to each player
  * * While players have at least one card :
  * * * asks each player to choose one card they have
- * * * serves stacks with played cards by ascending order (card n°1 is process before card n°2)
+ * * * serves stacks with played cards by ascending order (card nï¿½1 is process before card nï¿½2)
  * * * updates scores according to each move
  */
 public class GameManager {
@@ -68,7 +67,7 @@ public class GameManager {
 			this.resetPlayersScore();
 			
 			this.print(StringMaker.scores(players, context));
-			this.print(StringMaker.rewards(Counter.getScoreRewards(players)));
+
 		}
 		
 		context.outputs.close();

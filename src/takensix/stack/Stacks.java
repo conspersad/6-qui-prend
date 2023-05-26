@@ -65,5 +65,18 @@ public class Stacks extends HashMap<Integer, List<Card>> {
 			res += c.getScore();
 		return res;
 	}
+/*
+La classe Stacks est une extension de HashMap<Integer, List<Card>>, ce qui signifie qu'elle représente un ensemble de piles de cartes, où chaque pile est une liste de cartes (Card) et chaque pile est associée à un numéro entier unique.
 
+Voici ce que font les différentes méthodes et constructeurs de cette classe :
+
+Constructeur Stacks(Stacks stacks) : Ce constructeur crée une nouvelle instance de Stacks qui est une copie des Stacks passées en paramètre. Il copie chaque pile de cartes une par une, en créant de nouvelles instances de chaque Card.
+
+Constructeur Stacks() : Ce constructeur crée une nouvelle instance de Stacks sans aucune pile de cartes.
+
+toString() : Cette méthode surcharge la méthode toString de Object pour fournir une représentation sous forme de chaîne de caractères de l'objet Stacks. La chaîne retournée contient le numéro de chaque pile, la dernière carte ajoutée à chaque pile, le nombre total de cartes dans la pile et le score total de la pile.
+
+countScore(List<Card> cards) : Cette méthode privée compte le score total d'une liste de cartes en additionnant le score de chaque carte.
+
+En bref, cette classe est utilisée pour représenter et manipuler l'ensemble des piles de cartes dans le jeu.*/
 }

@@ -33,7 +33,7 @@ public class PlayContext {
 	 *            the player who needs to play
 	 * @param stacks
 	 *            the stacks statement for a certain turn
-	 * @param numberOfPlayers
+	 * @param playedCardCollection
 	 *            the number of players
 	 */
 	public PlayContext(GameContext gameContext, PlayedCardCollection playedCardCollection, Player player, Stacks stacks) {
@@ -127,4 +127,26 @@ public class PlayContext {
 	public void setPlayedCardHistory(PlayedCardCollection playedCardHistory) {
 		this.playedCardHistory = playedCardHistory;
 	}
-}
+}/*
+La classe PlayContext représente l'état du jeu à un moment précis. Elle fournit un contexte aux joueurs pour les aider à déterminer le coup à jouer. Voici ce que les attributs de cette classe représentent :
+
+player: Le joueur qui doit jouer.
+stacks: L'état des piles de cartes à un tour donné.
+gameContext: Le contexte général du jeu.
+playedCardHistory: L'historique des cartes jouées.
+La classe a deux constructeurs :
+
+Le premier PlayContext(GameContext gameContext, PlayedCardCollection playedCardCollection, Player player, Stacks stacks) crée un nouveau PlayContext en prenant le contexte de jeu, la collection des cartes jouées, le joueur et les piles de cartes.
+
+Le second PlayContext(PlayContext playContext) est un constructeur de copie qui crée une nouvelle instance de PlayContext à partir d'une instance existante de PlayContext.
+
+Il y a aussi plusieurs méthodes getter et setter pour récupérer et modifier les attributs de l'instance.
+
+De plus, la méthode getMyPlayableCards() renvoie les cartes que le joueur actuel peut jouer, et la méthode getMyScore() renvoie le score actuel du joueur.
+
+En résumé, cette classe sert à représenter l'état actuel du jeu à un moment précis, en gardant une trace du joueur, des piles de cartes, du contexte général du jeu, et de l'historique des cartes jouées.
+
+
+
+
+*/

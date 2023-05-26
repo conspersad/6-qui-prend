@@ -8,7 +8,6 @@ import takensix.game.GameManager;
 import takensix.output.OutputMode;
 import takensix.player.Player;
 import takensix.player.human.PlayerChooserHumanConsole;
-import takensix.player.ia.PlayerChooserRandom;
 import takensix.player.ia.PlayerChooserSimple;
 import takensix.utils.Constants;
 
@@ -73,9 +72,7 @@ public class Main {
 		
 		for (int i = 1; i <= numberOfHumanPlayer; i++)
 			players.add(new Player("Human" + i, new PlayerChooserHumanConsole(), Constants.NO_TIMEOUT));
-		
-		for (int i = 1; i <= numberOfRandomPlayer; i++)
-			players.add(new Player("Random" + i, new PlayerChooserRandom()));
+
 
 		for (int i = 1; i <= numberOfSimplePlayer; i++)
 			players.add(new Player("Simple" + i, new PlayerChooserSimple()));

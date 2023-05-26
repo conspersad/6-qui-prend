@@ -231,3 +231,29 @@ public class StackManager {
 		this.stacks = stacks;
 	}
 }
+/*Cette classe, nommée StackManager, gère les piles de cartes (Stacks) dans le jeu. Elle est capable d'initialiser, ajouter des cartes et nettoyer des piles. Elle possède plusieurs méthodes pour manipuler et interagir avec les piles de cartes du jeu.
+
+Voici une description plus détaillée des responsabilités et des méthodes de cette classe :
+
+Constructeurs: La classe StackManager a deux constructeurs. L'un prend un nombre de piles (numberOfStacks) comme argument et initialise le StackManager avec ce nombre de piles vides. L'autre prend un objet Stacks existant comme argument et initialise le StackManager avec ces piles.
+
+receiveCard: Cette méthode reçoit une carte (Card) et un contexte de jeu (PlayContext) en arguments. Elle détermine sur quelle pile la carte doit être placée et calcule le score de ce mouvement.
+
+simulate: Cette méthode est utilisée pour simuler un mouvement. Elle prend un PlayContext et une Card comme arguments, simule le mouvement et renvoie le PlayContext après le traitement du mouvement. Cette méthode est probablement utilisée pour aider l'intelligence artificielle du jeu à décider quel mouvement effectuer.
+
+addCardToStack: Cette méthode privée ajoute une carte à une pile spécifiée et renvoie le score du mouvement.
+
+cleanStack: Cette méthode privée nettoie une pile spécifiée (enlève toutes les cartes de la pile) et renvoie le score total de la pile.
+
+getStackIndexToInitialize et getStackIndexForCard: Ces méthodes déterminent l'indice de la pile à initialiser ou celle qui recevra une carte jouée.
+
+init: Cette méthode prépare les piles.
+
+getStacks et setStacks: Ces méthodes sont des getters et des setters pour l'attribut Stacks de la classe.
+
+L'ensemble de ces méthodes permet de gérer les piles de cartes du jeu, que ce soit pour ajouter des cartes, les retirer ou même les nettoyer. Cette classe est donc un élément central pour le déroulement du jeu.
+
+
+
+
+*/

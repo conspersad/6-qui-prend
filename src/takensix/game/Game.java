@@ -176,3 +176,22 @@ public class Game {
 	}
 
 }
+/*Cette classe en Java, appelée "Game", représente un jeu TakenSix. Elle est manipulée par la classe "GameManager".
+
+Voici un aperçu des principales fonctionnalités de cette classe :
+
+Elle contient une liste de joueurs (attribut "players") représentant les joueurs du jeu.
+Elle gère une instance de "CardGame" (attribut "cards") qui représente le jeu de cartes utilisé dans le jeu TakenSix.
+Elle gère un gestionnaire de piles (attribut "stackManager") qui contient et gère les piles utilisées dans le jeu.
+Elle a une liste de cartes jouées (attribut "playedCardList") associée à chaque joueur, qui représente les cartes jouées par les joueurs à un moment donné.
+Elle gère un historique des cartes jouées (attribut "playedCardsHistory") qui enregistre les cartes jouées précédemment.
+Les principales méthodes de la classe incluent :
+
+"getLowerPlayedCard": Cette méthode permet d'obtenir la carte jouée la plus basse (avec la plus petite valeur de numéro de carte) parmi les cartes jouées par les joueurs. Elle supprime également cette carte de la liste des cartes jouées.
+"getCards" et "setCards": Ces méthodes permettent d'obtenir et de définir l'instance de "CardGame" utilisée dans le jeu.
+"getPlayedCardList": Cette méthode permet d'obtenir la liste des cartes jouées associée à chaque joueur.
+"addPlayer", "getPlayers" et "setPlayers": Ces méthodes permettent d'ajouter des joueurs à la liste des joueurs, d'obtenir la liste des joueurs et de définir la liste des joueurs.
+"getStackManager" et "setStackManager": Ces méthodes permettent d'obtenir et de définir l'instance de "StackManager" utilisée dans le jeu.
+"addPlayedCard": Cette méthode permet d'ajouter une carte jouée par un joueur à la liste des cartes jouées.
+"getPlayedCardsHistory" et "setPlayedCardsHistory": Ces méthodes permettent d'obtenir et de définir l'historique des cartes jouées.
+En résumé, cette classe représente un jeu TakenSix avec ses joueurs, ses cartes, son gestionnaire de piles et son historique des cartes jouées. Elle fournit des méthodes pour manipuler et gérer ces éléments dans le cadre du jeu TakenSix.*/

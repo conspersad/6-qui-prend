@@ -81,3 +81,23 @@ public class GameContext {
 			outputs.add(new OutputFile());
 	}
 }
+/*
+La classe GameContext fournit le contexte général pour une instance de jeu. Elle contient divers paramètres pour l'instanciation d'un jeu, y compris :
+
+numberOfGivenCards: le nombre de cartes distribuées aux joueurs.
+numberOfStacks: le nombre de piles dans le jeu.
+numberOfCards: le nombre total de cartes dans le jeu.
+partyEndScore: le score qui met fin à une partie.
+numberOfParty: le nombre de parties.
+numberOfPlayers: le nombre de joueurs.
+cardScoreMode: le mode de score des cartes qui détermine comment associer des scores aux cartes.
+outputs: une collection d'objets Output qui seront utilisés pour afficher les résultats du jeu.
+La classe possède deux constructeurs :
+
+Le premier constructeur GameContext(int numberOfGivenCards, int numberOfStacks, int numberOfCard, int partyEndScore, int numberOfParty, CardScoreMode cardScoreMode, OutputMode outputMode) initialise un nouveau contexte de jeu avec les valeurs spécifiées pour les divers paramètres du jeu.
+
+Le second constructeur GameContext(GameContext gameContext) est un constructeur de copie qui crée une nouvelle instance de GameContext à partir d'une instance existante de GameContext.
+
+La méthode initOutputs(OutputMode outputMode) est utilisée pour initialiser la collection d'objets Output en fonction du mode de sortie (OutputMode) spécifié.
+
+En résumé, cette classe définit le contexte de base pour une instance de jeu, y compris les paramètres du jeu et la manière dont les résultats du jeu sont affichés.*/

@@ -78,4 +78,18 @@ public class CardGame {
 
 		return 0;
 	}
-}
+}/*La classe CardGame représente un ensemble de cartes du jeu. Chaque carte est unique et lorsqu'elle est distribuée à un joueur ou à une pile, elle est retirée de cet ensemble.
+
+Voici ce que font les différentes méthodes de cette classe :
+
+Constructeur CardGame(CardScoreMode cardScoreMode, int numberOfCards) : Ce constructeur crée une nouvelle instance de CardGame, génère un ensemble de cartes selon le mode de score de carte spécifié et le nombre de cartes, puis mélange l'ensemble de cartes.
+
+shuffle() : Cette méthode mélange l'ensemble de cartes.
+
+populate(CardScoreMode cardScoreMode, int numberOfCards) : Cette méthode privée génère un ensemble de cartes en fonction du mode de score de carte spécifié et du nombre de cartes. Pour chaque carte, un score est attribué en fonction du mode de score de carte.
+
+getOneCard() : Cette méthode renvoie une carte de l'ensemble de cartes et la retire de cet ensemble.
+
+getScore(int cardNumber, CardScoreMode cardScoreMode) : Cette méthode privée renvoie un score à attribuer à une carte. Le score est généré en fonction du mode de score de carte. Si le mode de score de carte est RANDOM_MODE, un score aléatoire est généré. Si le mode de score de carte est REAL_SCORE_MODE, le score est zéro.
+
+En résumé, cette classe est utilisée pour représenter et manipuler un ensemble de cartes dans le cadre du jeu. Elle fournit des fonctionnalités pour générer l'ensemble de cartes, mélanger l'ensemble de cartes, et distribuer une carte de l'ensemble.*/
